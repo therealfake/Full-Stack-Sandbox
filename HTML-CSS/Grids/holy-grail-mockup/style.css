@@ -35,7 +35,7 @@
   
   .menu ul {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: repeat(4, 1fr);
   }
   
   .menu ul,
@@ -75,7 +75,7 @@
   
   .nav ul {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
       list-style-type: none;
   }
   
