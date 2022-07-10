@@ -4,19 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catz</title>
+    <title>Giphy Search</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <img src="#">
-    <script>
-        const img = document.querySelector('img');
-        fetch('https://api.giphy.com/v1/gifs/translate?api_key=HcVZfgWKEepD3kqw5NRzXPKyAylHNV8C&s=cats', {mode: 'cors'})
-            .then(function(response) {
-                return response.json();
-            })
-            .then(function(response) {
-                img.src = response.data.images.original.url;
-            });
-    </script>
+    <img src="#"><br>
+    <input type="text">
+    <button>Search</button>
 </body>
 </html>
