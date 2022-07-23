@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import MyComponent from './MyComponent';
+import MyFunctionalComponent from './MyFunctionalComponent';
 
 class App extends Component {
   constructor(props) {
@@ -15,8 +16,14 @@ class App extends Component {
     
     return (
       <div>
-        <MyComponent title="React" onButtonClicked={this.onClickBtn}/> 
+        <div>
+        <MyFunctionalComponent title="Hello World" />
+        </div>
+        <div>
+          <MyComponent title="React" onButtonClicked={this.onClickBtn}/> 
+        </div>
       </div>
+      
     )
   }
 }
