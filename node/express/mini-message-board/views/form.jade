@@ -1,0 +1,14 @@
+extends layout 
+
+block content
+    h1 New Message Form!
+    form(method='POST', action='/new')
+        label(for="authorName") Your Name
+        <br><br>
+        input(type="text" id="authorName" name="authorName")
+        <br><br>
+        label(for="authorMessage") Message
+        <br><br>
+        input(type="text" id="authorMessage" name="authorMessage")
+        <br><br>
+        input(type="submit" value="Submit")

@@ -2,8 +2,11 @@ extends layout
 
 block content
   h1= title
+  a(href="/new")
+    input(type="button" value="Add a New Message!")
   each msg in messages 
     p= msg.text
     p= msg.user 
     p= msg.added
     <br><br>
+    
